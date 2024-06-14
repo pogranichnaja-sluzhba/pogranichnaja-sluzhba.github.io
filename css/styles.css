@@ -15,9 +15,19 @@ h2#control-3673761 {
 .formbuilder-number.form-group.mail{
     display: inline-grid;
     margin-top: 5px;
+    width: 100%;
 }
 a#datas-btn {
     display: block;
+}
+a#datas-btn {
+    background: #0560af;
+    color: black;
+    width: 100px;
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 5px;
+    text-align: center;
 }
 
 input[type="submit"] {
