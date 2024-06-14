@@ -17,28 +17,32 @@ h2#control-3673761 {
     margin-top: 5px;
     width: 100%;
 }
+
+input {
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+
 a#datas-btn {
     display: block;
 }
+
+.btn55 {
+    width: 100%;
+    text-align: -webkit-center;
+}
+
 a#datas-btn {
     background: #0560af;
-    color: black;
-    width: 100px;
+    color: rgb(255, 255, 255);
+    width: 200px;
     padding: 5px;
     margin-top: 10px;
     border-radius: 5px;
     text-align: center;
 }
 
-input[type="submit"] {
-    color: white;
-    font-size: 18px;
-    background: #022eab;
-    padding: 8px 16px;
-    border: 2px solid #000000;
-    border-radius: 5px;
-    margin-top: 12px;
-}
 @media only screen and (min-device-width: 300px) 
                    and (max-device-width: 800px) 
                    and (orientation: portrait) {
