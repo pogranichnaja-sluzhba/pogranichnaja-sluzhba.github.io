@@ -42,7 +42,47 @@ input[type="submit"] {
 @media only screen and (min-device-width: 300px) 
                    and (max-device-width: 800px) 
                    and (orientation: portrait) {
-
+                    h2#control-3673761 {
+                        display: flex;
+                        flex-direction: column;
+                        font-size: 0.9rem;
+                    }
+                    
+                    .form_1 {
+                        display: inline-grid;
+                    }
+                    
+                    .formbuilder-text.form-group.field-last_name, .formbuilder-text.form-group.field-first_name,
+                    .formbuilder-text.form-group.field-patronymic, .formbuilder-date.form-group.field-birthday,
+                    .formbuilder-number.form-group.field-number_tel, .formbuilder-date.form-group.citizenship,
+                    .formbuilder-date.form-group.region, .formbuilder-date.form-group.education, .formbuilder-date.form-group.service,
+                    .formbuilder-number.form-group.mail{
+                        display: inline-grid;
+                        margin-top: 5px;
+                        width: 100%;
+                    }
+                    a#datas-btn {
+                        display: block;
+                    }
+                    a#datas-btn {
+                        background: #0560af;
+                        color: black;
+                        width: 100px;
+                        padding: 5px;
+                        margin-top: 10px;
+                        border-radius: 5px;
+                        text-align: center;
+                    }
+                    
+                    input[type="submit"] {
+                        color: white;
+                        font-size: 18px;
+                        background: #022eab;
+                        padding: 8px 16px;
+                        border: 2px solid #000000;
+                        border-radius: 5px;
+                        margin-top: 12px;
+                    }
                    }
 
                    *,
