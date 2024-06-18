@@ -4,6 +4,11 @@ h2#control-3673761 {
     font-size: 0.9rem;
 }
 
+img.board-img {
+    width: auto;
+    height: auto;
+}
+
 .form_1 {
     display: inline-grid;
 }
