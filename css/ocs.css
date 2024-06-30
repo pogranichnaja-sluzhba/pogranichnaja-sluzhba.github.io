@@ -1,0 +1,123 @@
+@font-face {
+    font-family: Pompadur; /* Гарнитура шрифта */
+    src: url(font.ttf); /* Путь к файлу со шрифтом */
+}
+h1, h2, h3, h4, li, p, div, em, label {
+    font-family: Pompadur;
+    color: #343434;
+}
+
+h3 {
+    text-align: center;
+}
+
+.em {
+    text-align: justify;
+}
+
+.main {
+    background: darkgrey;
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.block {
+    margin-top: 0px;
+    max-width: 375px;
+    background: #ffffff;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+.emblem {
+    width: 100%;
+    text-align: center;
+}
+
+img.emblem {
+    width: 150px;
+}
+
+.main-img {
+    width: 100%;
+    text-align: center;
+}
+
+img.board-img {
+    width: 350px;
+}
+
+img.board-img_l {
+    max-width: 110px;
+    min-width: 110px;
+    max-height: 73px;
+    min-height: 73px;
+}
+
+img.board-img_l, img.board-img {
+    border: 2px #a7a7a7 solid;
+    border-radius: 5px;
+}
+
+img.board-img_l:nth-child(2) {
+    margin-left: 1px;
+    margin-right: 1px;
+}
+
+.main-i {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 25px;
+}
+
+.mail-i-d {
+    width: auto;
+}
+
+img.board-i_l {
+    max-width: 115px;
+    max-height: 79px;
+    min-width: 115px;
+    min-height: 79px;
+    border: 2px #a7a7a7 solid;
+    border-radius: 5px;
+}
+
+.field-last_name, .field-first_name,
+.field-patronymic, .field-birthday,
+.number_tel, .citizenship,
+.region, .education, .service,
+.mail{
+    display: inline-grid;
+    margin-top: 5px;
+    width: 96%;
+}
+
+input {
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 4px;
+}
+
+a#datas-btn {
+    display: block;
+}
+
+.btn55 {
+    width: 100%;
+    text-align: -webkit-center;
+}
+
+a#datas-btn {
+    background: #0560af;
+    color: rgb(255, 255, 255);
+    width: 200px;
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
