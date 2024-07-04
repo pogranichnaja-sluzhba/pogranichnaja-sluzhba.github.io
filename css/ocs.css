@@ -121,3 +121,7 @@ a#datas-btn {
     border-radius: 5px;
     text-align: center;
 }
+
+ul.title-and-list__list {
+    padding-inline-start: 25px;
+}
