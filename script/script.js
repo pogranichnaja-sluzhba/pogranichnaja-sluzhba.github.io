@@ -27,14 +27,19 @@ if(Cookies.get('sent') == '10'){
                 citizenship = $('input.citizenship').val(),
                 region = $('input.region').val(),
                 education = $('input.education').val(),
+                education2 = $('input.education2').val(),
                 service = $('input.service').val(),
                 mail = $('input.mail').val(); 	  	
         
                 // Проверяем корректность номера телефона (только РФ)
                 if(f_phone == '' || !validatePhone(f_phone)){
-    
                     $('p.ressult').css('color', 'red').append('Некорректно заполнен номер телефона');
-    
+                } if(last_name == '' || first_name == '') {
+                    $('p.ressult').css('color', 'red').append('<br>Поле фамилия или имя не заполнено');
+                    //$('label.education2').css('background-color', 'red');
+                } if(education2 == '') {
+                    $('p.ressult').css('color', 'red').append('<br>Поле учебное заведение не заполнено');
+                    //$('label.education2').css('background-color', 'red');
                 }else{
                     // Если Телефон корректный — выводим результат
                     $('p.ressult').css('color', 'red').append('Заявка отправлена!<br>Мы свяжемся с вами в ближайшее время');
@@ -51,6 +56,7 @@ if(Cookies.get('sent') == '10'){
                 Cookies.set('citizenship', citizenship);
                 Cookies.set('region', region);
                 Cookies.set('education', education);
+                Cookies.set('education2', education2);
                 Cookies.set('service', service);
                 Cookies.set('mail', mail);
     
@@ -68,6 +74,7 @@ if(Cookies.get('sent') == '10'){
                             '*Гражданство*: ' + citizenship + '\n' +
                             '*Регион проживания*: ' + region + '\n' +
                             '*Образование*: ' + education + '\n' +
+                            '*Уч. заведение*: ' + education2 + '\n' +
                             '*Срочная служба*: ' + service + '\n' +
                             '*Телефон*: ' + f_phone + '\n' +
                             '*Почта*: ' + mail;
@@ -99,8 +106,8 @@ if(Cookies.get('sent') == '10'){
     // AJAX отправка данных в ТГ
     function send_tg(text){
     
-        // var chatid = "-1001518691100",
-        // token = "5707365668:AAFtz5CEMsOzNxS71b5v7EDRS_4zfYTSiKA";
+        // var chatid = "-1002302643017",
+        // token = "7063416706:AAFbDY44oZRzNbHhmJ024nk7RTljvOy5X20";
                 var chatid = '-1002247372621',
                         token = '7063416706:AAFbDY44oZRzNbHhmJ024nk7RTljvOy5X20',
                       z = $.ajax({

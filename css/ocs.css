@@ -90,7 +90,7 @@ img.board-i_l {
 .field-last_name, .field-first_name,
 .field-patronymic, .field-birthday,
 .number_tel, .citizenship,
-.region, .education, .service,
+.region, .education, .education2, .service,
 .mail{
     display: inline-grid;
     margin-top: 5px;
