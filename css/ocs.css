@@ -15,17 +15,35 @@ h3 {
     text-align: justify;
 }
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 .main {
+    width: 100%;
+    min-width: 0;
     background: darkgrey;
     display: flex;
     flex-direction: column-reverse;
-    flex-wrap: wrap;
-    align-content: center;
+    align-items: center;
 }
 
 .block {
-    margin-top: 0px;
+    width: 100%;
     max-width: 375px;
+    min-width: 0;
+    margin: 0 auto;
     background: #ffffff;
     padding: 12px;
     border-radius: 8px;
@@ -49,11 +67,24 @@ img.board-img {
     width: 350px;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+img.board-img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+}
+
 img.board-img_l {
-    max-width: 110px;
-    min-width: 110px;
-    max-height: 73px;
-    min-height: 73px;
+    width: 110px;
+    max-width: 95px;
+    height: 73px;
+    min-width: 0;
+    min-height: 0;
+    object-fit: cover;
 }
 
 img.board-img_l, img.board-img {
@@ -79,9 +110,9 @@ img.board-img_l:nth-child(2) {
 }
 
 img.board-i_l {
-    max-width: 115px;
+    max-width: 90px;
     max-height: 79px;
-    min-width: 115px;
+    min-width: 90px;
     min-height: 79px;
     border: 2px #a7a7a7 solid;
     border-radius: 5px;
@@ -125,3 +156,4 @@ a#datas-btn {
 ul.title-and-list__list {
     padding-inline-start: 25px;
 }
+
